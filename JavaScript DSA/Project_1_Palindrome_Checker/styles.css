@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: bisque;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: darkslategray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.palindrome-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.repeat-icon {
+    animation: rotation 5s infinite linear;
+    margin: 0.5em;
+}
+
+button {
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+button:active {
+    background-color: darkslategray;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

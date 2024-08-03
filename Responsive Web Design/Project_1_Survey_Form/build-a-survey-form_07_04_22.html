@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="survey_styles.css">
+    <title>Harry Potter Survey Form</title>
+  </head>
+  <body>
+    <div>
+      <header class="header">
+      <h1 id="title" class="text-center">Harry Potter Fandom Survey</h1>
+      <img class="harry-icon" src="http://clipart-library.com/images_k/harry-potter-lightning-bolt-transparent/harry-potter-lightning-bolt-transparent-21.png"/>
+      <p id="description" class="description">Are you a bigger fan of the movies or books? Which is your favorite?</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label">Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label">Email</label>
+          <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+        </div>
+        <div class="form-group">
+          <label id="number-label">Age (optional)</label>
+          <input type="number" id="number" class="form-control" placeholder="Age" min="13" max="120">
+        </div>
+        <p>Do you prefer the books or movies more?</p>
+        <div class="form-group">
+          <label id="book-label"><input type="radio" value="books" name="radio_button" class="input-radio" checked> Books</label>
+          <label id="movie-label"><input type="radio" value="movies" name="radio_button" class="input-radio"> Movies</label>
+        </div>
+        <div class="form-group">
+          <p>Which Hogwarts house is the worst?</p>
+          <select id="dropdown" name="worst_house" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="gryffindor">Gryffindor</option>
+            <option value="hufflepuff">Hufflepuff</option>
+            <option value="ravenclaw">Ravenclaw</option>
+            <option value="slytherin">Slytherin</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Which book(s)/movie(s) are your favorite?</p>
+          <label class="checkbox-label"><input name="favorite" value="philosophers_stone" type="checkbox" class="input-checkbox"> Philosopher's Stone</label>
+          <label class="checkbox-label"><input name="favorite" value="chmaber_secrets" type="checkbox" class="input-checkbox"> Chamber of Secrets</label>
+          <label class="checkbox-label"><input name="favorite" value="philosophers_stone" type="checkbox" class="input-checkbox"> Prisoner of Azkaban</label>
+          <label class="checkbox-label"><input name="favorite" value="philosophers_stone" type="checkbox" class="input-checkbox"> Goblet of Fire</label>
+          <label class="checkbox-label"><input name="favorite" value="philosophers_stone" type="checkbox" class="input-checkbox"> Order of the Phoenix</label>
+          <label class="checkbox-label"><input name="favorite" value="philosophers_stone" type="checkbox" class="input-checkbox"> Half Blood Prince</label>
+          <label class="checkbox-label"><input name="favorite" value="philosophers_stone" type="checkbox" class="input-checkbox"> Deathly Hallows (movie lovers, sorry, it's one entry)</label>
+        </div>
+        <div>
+          <p>Why is this your favorite?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="My favorite is..."></textarea>
+        </div>
+        <div>
+          <button type="submit" id="submit" class="submit-button"> Submit </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

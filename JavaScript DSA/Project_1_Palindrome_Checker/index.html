@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://kit.fontawesome.com/1443316218.js" crossorigin="anonymous"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palindrome Checker</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main class="container">
+            <i class="fa-solid fa-repeat fa-2xl repeat-icon"></i>
+            <h1 class="title">Palindrome Checker</h1>
+            <div class="palindrome-div">
+                <label for="text-input">Enter your text:</label>
+                <input class="palindrome-input" id="text-input" value type="text" name="string"/>
+                <button class="palindrome-btn" id="check-btn" type="submit" onclick="check_input()">Check</button>
+            </div>
+            <div class="results-div" id="result" hidden>
+                <p class="user-input" id="result-string"></p>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
