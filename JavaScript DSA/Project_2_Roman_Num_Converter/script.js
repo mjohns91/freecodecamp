@@ -1,21 +1,22 @@
 const inputEl = document.getElementById("number");
 const convertBtn = document.getElementById("convert-btn");
 const outputEl = document.getElementById("output");
+const outputDiv = document.getElementById("output-container");
 
 let numeralString = [];
 
 const convert = () => {
     if (inputEl.value === "") {
-        valueError();
+        return valueError();
     }
     let number = parseInt(inputEl.value);
     
     //check for valid value
     if (number < 1) {
-        valueError('low');
+        return valueError('low');
     }
     if (number > 3999) {
-        valueError('high');
+        return valueError('high');
     }
     
     //reset numeral string array
@@ -25,6 +26,7 @@ const convert = () => {
     console.log(numeralString);
 
     outputEl.innerText = numeralString.join("")
+    outputDiv.hidden = false;
 }
 
 
@@ -81,6 +83,7 @@ const decimalToRoman = (value) => {
 
 
 const valueError = (error) => {
+    outputDiv.hidden = false;
     switch (error) {
         case 'low':
             outputEl.innerText = "Please enter a number greater than or equal to 1";

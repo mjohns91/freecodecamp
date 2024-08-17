@@ -8,14 +8,18 @@
         <title>Roman Numeral Converter</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <main>
-        <h1>Roman Numeral Converter</h1>
+    <main class="main-container">
+        <div class="title">
+            <i class="fa-solid fa-2xl fa-calculator"></i>
+            <i class="fa-solid fa-2xl fa-arrow-down-wide-short"></i>
+            <h1>Roman Numeral Converter</h1>
+        </div>
         <div id="input-container">
             <input type="text" id="number">
             <button id="convert-btn" onclick="convert()">Convert</button>
         </div>
-        <div id="output-container">
-            <p id="output">placeholder</p>
+        <div id="output-container" hidden>
+            <p id="output">HELLO</p>
         </div>
     </main>
     <body>
